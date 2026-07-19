@@ -1,0 +1,11 @@
+{
+  "setup": [
+    "npm ci --no-audit --no-fund",
+    "npx tsc && node scripts/build-ui.mjs"
+  ],
+  "command": "node",
+  "args": [
+    "dist/index.js"
+  ],
+  "env": {}
+}
