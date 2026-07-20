@@ -1,7 +1,7 @@
 {
   "setup": [
-    "npm ci --no-audit --no-fund",
-    "npx tsc && node scripts/build-ui.mjs"
+    "npx -y pnpm install --frozen-lockfile",
+    "npx -y pnpm exec tsc && node scripts/build-ui.mjs"
   ],
   "command": "node",
   "args": [
